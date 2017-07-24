@@ -35,3 +35,12 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 ### Support or Contact
 
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+<!DOCTYPE html>
+<title>My Example</title>
+
+<form method="get" action="/html/codes/html_form_handler.cfm">
+  <p>
+    <label>Name
+      <input type="text" name="customer_name" required>
+    </label> 
+  </p>
