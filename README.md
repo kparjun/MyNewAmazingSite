@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## This is a site designed to demonstate the use of an HTML code and commonly used themes
 
 You can use the [editor on GitHub](https://github.com/kparjun/MyNewAmazingSite/edit/gh-pages/README.md) to maintain and preview the content for your website in Markdown files.
 
