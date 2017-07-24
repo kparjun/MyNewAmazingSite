@@ -1,6 +1,5 @@
 
-<!DOCTYPE html>
-<title>My Example</title>
+<title>Assignment</title>
 
 <form method="get" action="/html/codes/html_form_handler.cfm">
   <p>
