@@ -1,40 +1,4 @@
-## This is a site designed to demonstate the use of an HTML code and commonly used themes
 
-You can use the [editor on GitHub](https://github.com/kparjun/MyNewAmazingSite/edit/gh-pages/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/kparjun/MyNewAmazingSite/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
 <!DOCTYPE html>
 <title>My Example</title>
 
@@ -44,3 +8,69 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
       <input type="text" name="customer_name" required>
     </label> 
   </p>
+ <p>
+    <label>Phone 
+      <input type="tel" name="phone_number">
+    </label>
+  </p>
+
+  <p>
+    <label>Email 
+      <input type="email" name="email_address">
+    </label>
+  </p>
+
+  <fieldset>
+    <legend>Which taxi do you require?</legend>
+    <p><label> <input type="radio" name="taxi" required value="car"> Car </label></p>
+    <p><label> <input type="radio" name="taxi" required value="van"> Van </label></p>
+    <p><label> <input type="radio" name="taxi" required value="tuktuk"> Tuk Tuk </label></p>
+  </fieldset>
+
+  <fieldset>
+    <legend>Extras</legend>
+    <p><label> <input type="checkbox" name="extras" value="baby"> Baby Seat </label></p>
+    <p><label> <input type="checkbox" name="extras" value="wheelchair"> Wheelchair Access </label></p>
+    <p><label> <input type="checkbox" name="extras" value="tip"> Stock Tip </label></p>
+  </fieldset>
+
+  <p>
+    <label>Pickup Date/Time
+      <input type="datetime-local" name="pickup_time" required>
+    </label>
+  </p>
+
+  <p>
+    <label>Pickup Place
+      <select id="pickup_place" name="pickup_place">
+        <option value="" selected="selected">Select One</option>
+        <option value="office" >Taxi Office</option>
+        <option value="town_hall" >Town Hall</option>
+        <option value="telepathy" >We'll Guess!</option>
+      </select>
+    </label> 
+  </p>
+
+  <p>
+    <label>Dropoff Place
+      <input type="text" name="dropoff_place" required list="destinations">
+    </label>
+
+    <datalist id="destinations">
+      <option value="Airport">
+      <option value="Beach">
+      <option value="Fred Flinstone's House">
+    </datalist>
+  </p>
+
+  <p>
+    <label>Special Instructions
+      <textarea name="comments" maxlength="500"></textarea>
+    </label>
+  </p>
+
+  <p><button>Submit Booking</button></p>
+
+</form>
+
+<hr>
